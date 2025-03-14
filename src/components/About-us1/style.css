@@ -1,0 +1,53 @@
+.topics {
+  background-color: #0C0C0C;
+  color: #fff;
+}
+
+.topics .sec-head h6 {
+  color: #75dab4;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.topics .sec-head h3 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.news-item {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.news-date {
+  color: #75dab4;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.news-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.news-title:hover {
+  color: #75dab4;
+  text-decoration: none;
+} 

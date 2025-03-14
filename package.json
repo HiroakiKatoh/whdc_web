@@ -1,0 +1,39 @@
+{
+  "name": "avo2-react",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
+    "gsap": "^3.12.7",
+    "jquery": "^3.7.1",
+    "next": "12.0.7",
+    "nextjs-google-analytics": "^2.3.7",
+    "react": "17.0.2",
+    "react-circular-progressbar": "^2.0.4",
+    "react-countup": "^6.1.0",
+    "react-dom": "17.0.2",
+    "react-modal-video": "^1.2.8",
+    "react-slick": "^0.28.1",
+    "react-tsparticles": "^2.12.2",
+    "react-visibility-sensor": "^5.1.1",
+    "remixicon": "^4.6.0",
+    "slick-carousel": "^1.8.1",
+    "splitting": "^1.1.0",
+    "swiper": "^7.4.1",
+    "tsparticles-slim": "^2.12.0",
+    "vis-data": "^7.1.9",
+    "vis-network": "^9.1.9"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

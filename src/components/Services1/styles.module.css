@@ -1,0 +1,41 @@
+.services {
+  background-color: #0C0C0C;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.secHead {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.secHead h6 {
+  color: #75dab4;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.secHead h3 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.serviceImage {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+} 

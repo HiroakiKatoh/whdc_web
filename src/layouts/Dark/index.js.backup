@@ -1,0 +1,32 @@
+'use client';
+import React from "react";
+import "./style.css";
+
+const DarkTheme = ({ children }) => {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+    if (typeof window !== 'undefined') {
+      window.theme = "dark";
+    }
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  return (
+    <div className="dark-theme">
+      <div className="circle-bg">
+        <div className="circle-color fixed">
+          <div className="gradient-circle"></div>
+          <div className="gradient-circle two"></div>
+        </div>
+      </div>
+      {children}
+    </div>
+  );
+};
+
+export default DarkTheme; 

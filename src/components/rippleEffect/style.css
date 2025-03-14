@@ -1,0 +1,16 @@
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-20px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+}
+
+.floating-video {
+  animation: float 6s ease-in-out infinite;
+  transition: all 0.3s ease-in-out;
+} 

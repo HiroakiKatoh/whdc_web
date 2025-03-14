@@ -1,0 +1,249 @@
+/* 
+ * このCSSファイルは src/styles/management-team.css へ配置して使用してください。
+ * -------------------------------------------------------------------------
+ */
+.management-main {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* フェードイン用の基本スタイル */
+.fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+}
+
+/* 右からスライド */
+.fade-in-right {
+    transform: translate(50px, 0);
+}
+
+/* スクロールで表示された時のスタイル */
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.member-section {
+    margin-bottom: 300px;
+    padding: 0px 0;
+    background-color: #242936;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.member-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: none;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.member-image.animate {
+    transition: all 1.2s cubic-bezier(0.17, 0.67, 0.3, 1.33);
+}
+
+.member-image.show {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* 不要なアニメーション定義を削除 */
+.member-image.imago {
+    animation: none;
+}
+
+@keyframes imago {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.member-info h2 {
+    font-size: 1.4rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.member-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.member-info p {
+    line-height: 2.2;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.career-history {
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.career-history h4 {
+    color: #4a90e2;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.career-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.career-history li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.career-history .year {
+    color: #4a90e2;
+    font-weight: 600;
+    min-width: 90px;
+}
+
+/* スクロールインジケーター */
+.scroll-indicator-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.scroll-button {
+    display: inline-block;
+}
+
+.scroll-button img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    maxWidth: 90px;
+    maxHeight: 90px;
+}
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+    .management-main {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .member-section {
+        margin-bottom: 100px;
+    }
+
+    .member-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .member-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .member-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .member-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .member-info p {
+        font-size: 1rem;
+    }
+
+    .career-history li {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .career-history .year {
+        min-width: auto;
+    }
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.pages-header {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
